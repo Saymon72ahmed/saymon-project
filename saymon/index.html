@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saymon Ahmed Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Portfolio of Saymon Ahmed</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#project">Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="images/project.jpg" alt="My Profile Picture">
+        <p>
+         hi, I'm Saymon Ahmed.i'm a professional developer.I'm enthusiastic to learn Internet Of Things.I'm spcialist in UI/UX design.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <span>Java</span>
+          <div class="bar-container">
+            <div class="bar" data-percent="80"></div> <!-- Adjust percentage here -->
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>C</span>
+          <div class="bar-container">
+            <div class="bar" data-percent="65"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>C++</span>
+          <div class="bar-container">
+            <div class="bar" data-percent="70"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>PHP</span>
+          <div class="bar-container">
+            <div class="bar" data-percent="50"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>MySQL</span>
+          <div class="bar-container">
+            <div class="bar" data-percent="99"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const barElements = document.querySelectorAll('.bar');
+  
+      barElements.forEach(bar => {
+          const percentage = bar.dataset.percent;
+          bar.style.width = percentage + '%'; // Set the width dynamically
+      });
+  </script>
+
+<div class="project">
+  <h2>Project </h2>
+<li>
+<ul>Bus ticket reservation system</ul>
+<ul> Electricity management system</ul>
+<ul>online voting system</ul>
+</li>
+</div>
+
+
+    <section id="academics">
+      <h2>Academics</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Year</th>
+            <th>Id</th>
+            <th>picture</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>B.Sc in I.C.E</td>
+            <td>Bangladesh university of professionals</td>
+            <td>session:2021-22</td>
+            <td>ID:2254901072</td>
+            <td>  <img src="images/bup.png" alt="bup" > </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:[Your Email Address]">saymonahammed13@gmail.com</a></p>
+      <p>Phone: 01617582960</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© [2025] [Saymon]</p>
+  </footer>
+
+
+</body>
+</html>
